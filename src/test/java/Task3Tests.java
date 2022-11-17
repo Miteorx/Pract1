@@ -18,7 +18,7 @@ public class Task3Tests {
   @Test
   public void correctlyWorkTesting() {
     Ball ball = new Ball(3);
-    Cube cube = new Cube(3, 3, 3);
+    Cube cube = new Cube(3);
     Cylinder cylinder = new Cylinder(3, 3);
     List<Figures> figuresList = Arrays.asList(ball, cube, cylinder);
 

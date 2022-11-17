@@ -2,16 +2,14 @@ package figures;
 
 public class Cube implements Figures {
 
-  private int a, b, c;
+  private final int sideLength;
 
-  public Cube(int a, int b, int c) {
-    this.a = a;
-    this.b = b;
-    this.c = c;
+  public Cube(int side) {
+    this.sideLength = side;
   }
 
 
-  public double area() {
-    return a * b * c;
+  public double getVolume() {
+    return sideLength * sideLength * sideLength;
   }
 }
