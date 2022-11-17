@@ -10,7 +10,7 @@ public class Ball implements Figures {
 
   @Override
   public double getVolume() {
-    return 4 * Math.PI * radius * radius;
+    return 4.0 / 3 * Math.PI * radius * radius * radius;
   }
 
 }

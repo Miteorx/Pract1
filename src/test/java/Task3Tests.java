@@ -22,7 +22,7 @@ public class Task3Tests {
     Cylinder cylinder = new Cylinder(3, 3);
     List<Figures> figuresList = Arrays.asList(ball, cube, cylinder);
 
-    List<Figures> expected = Arrays.asList(cube, ball, cylinder);
+    List<Figures> expected = Arrays.asList(cube,cylinder, ball);
     List<Figures> result = task3.sortFigures(figuresList);
 
     assertEquals(expected,result);

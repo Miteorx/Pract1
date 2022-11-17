@@ -5,13 +5,13 @@ public class Cylinder implements Figures {
   private final int height;
   private final int radius;
 
-  public Cylinder(int h, int radius) {
-    this.height = h;
+  public Cylinder(int height, int radius) {
+    this.height = height;
     this.radius = radius;
   }
 
   @Override
   public double getVolume() {
-    return (2 * Math.PI * radius * height) + (2 * Math.PI * radius * radius);
+    return Math.PI * radius * radius * height;
   }
 }
