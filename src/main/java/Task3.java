@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Task3 {
 
-  public List<Figures> sortFigures(List<Figures> figuresList) {
+  public static List<Figures> sortFigures(List<Figures> figuresList) {
     if (figuresList == null || figuresList.size() == 0) {
       return null;
     }

@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class Task2 {
 
-  public List<Entry<String, Integer>> topFive(String[] list) {
+  public static List<Entry<String, Integer>> getTopFiveHashtags(String[] list) {
     if (list == null || list.length == 0) {
       return null;
     }

@@ -1,6 +1,6 @@
 public class Task1 {
 
-  public int[] positiveNumbers(int[] arr) {
+  public static int[] getPositiveReverseSortedNumbers(int[] arr) {
     if (arr == null || arr.length == 0) {
       return null;
     }

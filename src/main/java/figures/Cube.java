@@ -10,6 +10,6 @@ public class Cube implements Figures {
 
 
   public double getVolume() {
-    return sideLength * sideLength * sideLength;
+    return Math.pow(sideLength, 3);
   }
 }

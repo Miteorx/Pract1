@@ -9,8 +9,6 @@ import org.junit.Test;
 
 public class Task2Tests {
 
-  Task2 task2 = new Task2();
-
   @Test
   public void correctlyWorkTesting() {
     String[] testStrings = {"#hi i am hi #hi", "#hi", "#let #me #see #see #see", "#let", "#hi",
@@ -24,7 +22,7 @@ public class Task2Tests {
     List<Entry<String, Integer>> expect = temp.entrySet().stream()
         .sorted((e1, e2) -> -e1.getValue().compareTo(e2.getValue()))
         .collect(Collectors.toList()).subList(0, 5);
-    assertEquals(expect, task2.topFive(testStrings));
+    assertEquals(expect, Task2.getTopFiveHashtags(testStrings));
   }
 
   @Test
@@ -36,19 +34,19 @@ public class Task2Tests {
         .sorted((e1, e2) -> -e1.getValue().compareTo(e2.getValue()))
         .collect(Collectors.toList()).subList(0, 1);
 
-    assertEquals(expect, task2.topFive(testStrings));
+    assertEquals(expect, Task2.getTopFiveHashtags(testStrings));
 
   }
 
   @Test
   public void nullTesting() {
     String[] testStrings = null;
-    assertNull(task2.topFive(testStrings));
+    assertNull(Task2.getTopFiveHashtags(testStrings));
   }
 
   @Test
   public void emptyArrayTesting() {
-    assertNull(task2.topFive(new String[]{}));
+    assertNull(Task2.getTopFiveHashtags(new String[]{}));
   }
 
 }
